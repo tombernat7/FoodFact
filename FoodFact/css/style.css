@@ -1,0 +1,497 @@
+/*----------------------GENERAL----------------------*/
+
+body{
+    margin: 0px;
+    font-family: 'Nunito', sans-serif; /*Font from fonts.google.com*/
+    font-size: 25px;
+}
+
+a{
+    color: white;                 /*Principally for the header*/
+    text-decoration: none;          /*We don't want the underline from the anchor*/
+}
+
+p{
+    margin: auto;       /*These keeps the container in the middle of the page*/
+    width: 90%;         /*And this gives space between the text of a p container and the edge of the page*/
+}
+
+/*-------------------------HEADER-------------------------*/
+.logo{ 
+    padding: 5px;  /*Pushes the logo away from the top edge of the site*/
+    margin-left: 30px;  /*Pushes it away from the left edge of the site*/
+    height: 70px;
+}
+
+.logo > img{
+    height: 70px;
+}
+
+.logo:hover{
+    background-color: rgba(193, 40, 40);
+}
+
+header{
+    border: 2px rgba(0, 0, 0, 0.25);    
+    border-style: solid;    /*Styled border*/
+    height: 80px;
+    line-height: 80px;  /*Little trick to center the text on the y-axis*/
+    background-color: #B21919;
+    padding-left: 15px;
+}
+
+header ul{
+    list-style-type: none;      /*We don't want the bullets of the list*/
+    float: right;               /*Pushes the list to the right of its container*/
+    margin: 0px;
+    padding: 0px;
+}
+
+header ul li{
+    text-align: center;         
+    float: left;            /*Makes this list horizontal*/    
+    padding-right: 30px;    /*Gives space between lis*/
+    padding-left: 30px;     /*Gives space between lis*/
+}
+
+header ul li:first-child{
+    width: 175px;           /*We want a special width for this li (because of submenu)*/
+    padding: 0px;
+}
+
+header > a{
+    float: left; 
+}
+
+.submenu{
+    position: absolute;     /*Makes the position of the submenu absolute*/
+    flex-direction: column; /*Makes the submenu vertical*/
+    display: none;          /*Hides the submenu when we're not hovering it*/
+}
+
+.submenu > li{
+    text-align: center;
+    border-left: 2px rgba(0, 0, 0, 0.25);  /*Border for every side, except the bottom one*/
+    border-top: 2px rgba(0, 0, 0, 0.25);
+    border-right: 2px rgba(0, 0, 0, 0.25);
+    border-bottom: 0px;
+    border-style: solid;
+    font-size: 20px;
+    line-height: 35px;
+    background: #B21919;
+    padding: 2px;
+    z-index: 3;
+}
+
+.menu li:hover > ul{
+    display: flex;      /*Displays the submenu in a vertical way*/
+}
+
+header li:hover{
+    background-color: rgba(193, 40, 40);  /*Changes slightly the background color of the anchor that we're hovering*/
+}
+
+li ul li:last-child{
+    border-bottom: 2px rgba(0, 0, 0, 0.25); /*Border for the bottom side only for the last item of the list*/
+    border-style: solid;
+}
+
+header > ul > li:last-child{
+    height: 80px;
+    line-height: 80px;
+    display: flex;    /*Had an effect of centering the search bar on the y-axis*/
+}
+
+.material-icons.md-48 { 
+    font-size: 48px;      /*Style for the search icon*/
+    padding-top: 16px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-48:hover{
+    cursor:pointer;       /*Now this input behave like an anchor*/
+}
+
+input{
+    display: none;        /*Hides the search bar*/
+}
+
+/*When we click on the search icon, it checks or unchecks this input*/
+#searchControl:checked + #search{
+    display: inline;    /*Displays the search bar*/
+    height: 40px;
+    margin:auto;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+
+/*Trying to make the header thinner so it could fit on a smaller screen*/
+@media (max-width: 420px){
+    .logo{
+      margin-left: 0px;
+      height: 30px;
+    }
+
+    .logo > img{
+        height: 30px;
+    }
+      
+    header{
+      height: 40px;
+      line-height: 40px;
+      border: 1px solid rgba(0, 0, 0, 0.25); 
+    }
+
+    header ul li{
+        font-size: 0.5em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .submenu > li{
+      font-size: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.25); 
+      border-bottom: 0px;
+    }
+
+    .submenu > li:last-child{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25); 
+      }
+    
+    .menu > li{
+      padding: 5px;
+    }
+  }
+
+/*-------------------------MAIN-------------------------*/
+
+/*--GENERAL--*/
+main{
+    background-color: rgb(254,252,230);
+    text-align: center;
+    padding: 50px 0px;      /*Gives space at the top and bottom of the main*/
+}
+
+strong{
+    color: #B21919;       /*Applies the red color for the text in a strong container*/
+}
+
+strong > a{
+    color: #B21919;        /*Applies the red color for the text in an anchor in a strong container*/ 
+    text-decoration: underline #B21919;     /*Applies an underline on the anchor*/
+}
+
+.strike{
+    text-decoration: line-through #B21919;  /*Makes the text crossed-out*/
+}
+
+main > nav > p{
+    padding: 80px 30px;     
+}
+
+main > nav > div:nth-child(n+2){
+    padding: 80px 0px;
+    border-top: 2px solid rgba(178, 25, 25, 0.85);      /*Little border for clear separation between paragraphs*/
+}
+
+p > a, h3 > a{
+    text-decoration: underline #B21919;
+}
+
+.up > div{
+    color:rgba(178, 25, 25, 1);
+    position: relative;
+    margin: auto;
+    height: 50px;
+    line-height: 50px;
+    width: 3%;
+    padding: 0px 20px;
+    border: 2px solid rgba(178, 25, 25, 0.85);
+}
+
+.up > div:hover{
+    background-color: rgba(193, 40, 40, 0.8);   /*Changing color of the box when hovering it*/
+    color: rgba(255, 255, 255, 1);
+}
+
+.up > div:active{
+    background-color: rgba(223, 70, 70, 0.8);   /*Same color than above but +30 unit everywhere*/
+}
+
+/*--INDEX.HTML--*/
+
+.intro{
+    padding-bottom: 40px;
+}
+
+.intro p:nth-child(2){
+    padding: 30px 0px;
+}
+
+.intro > h1 > img{
+    width: 220px;
+}
+
+.gallery{
+    display: flex;          
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: auto;   /*Places the gallery at the middle of the page (on x-axis)*/
+    padding-bottom: 50px;
+    width: 90%;
+}
+
+.gallery-item{
+    display: flex;              /*Allows the images to be next to each other*/
+    flex-direction: column;     /*Arrange the images in columns*/
+    width: 28%;                 /*Width of one column (relatively to its container, for keeping the gallery style)*/
+    padding: 0.5%;              /*Padding relative to its container*/
+    box-sizing: border-box;     /*Takes into account borders and fills in the width and height of the element.*/
+    background-color: rgba(109, 110, 112, 0.35);    
+    margin: 1%;                 /*Margin relative to its container*/
+}
+
+.gallery-item img{
+    width: 100%;
+}
+
+.gallery-item caption{
+    font-size: 30px;
+    color: rgb(254,252,230);
+}
+
+.gallery-item:hover{
+    background-color: rgba(109, 110, 112, 0.75);    /*Same background-color when it's not hovered but more opaque*/
+}
+
+.gallery-item:active{
+    background-color: rgb(0, 121, 130);     /*A little fancy color when we click on images*/
+}
+
+/*For the phone screens, the 3x3 gallery becomes a 1x9 gallery*/
+@media (max-width: 420px){
+    .gallery{
+        width: 40%;
+    }
+    .gallery-item{
+        width: 98.5%;
+        margin-bottom: 30px;
+    }
+    .gallery-item:last-child{
+        margin-bottom: 0px;
+    }
+}
+
+/*--COUNTRY PAGES--*/
+
+/*Trying to have the flag in the middle of the page and in the same style as in the gallery*/
+.flag{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: rgba(109, 110, 112, 0.35);
+    width: 270px;
+    margin: auto;
+}
+
+.flag img{
+    width: 100%;
+}
+
+.flag caption{
+    font-size: 30px;
+    color: rgb(254,252,230);
+}
+
+.flag:hover{
+    background-color: rgba(109, 110, 112, 0.75);
+}
+
+.flag:active{
+    background-color: rgb(0, 121, 130);
+}
+
+main > p{
+    margin-bottom: 50px;
+}
+
+main > nav > div > h1{
+    margin: 0px;
+}
+
+main > nav > div > p{
+    padding: 30px;
+}
+
+main > nav > div > img{
+    width: 60%;
+}
+
+/*--FUN FACTS PAGE--*/
+
+.car{
+    overflow:hidden;    /*Hides the content that are not supposed to be displayed (it solved margin issues that I had on this page)*/
+    margin: auto;
+    margin-bottom: 30px;
+    width: 90%;
+
+    /*Giving style to my big container*/
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.65);
+    border: 2px solid rgba(178, 25, 25, 0.85);
+    border-radius: 5px;
+}
+
+.carTitle{
+    margin: 0px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 100%;
+}
+
+.boxI{
+    overflow: hidden;       /*Hides the images that are not supposed to be displayed*/
+    margin: auto;
+    width: 400px;           /*Dimension of one image of the carousel*/
+    height: 305px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.carI{
+    position: absolute;
+    display: flex;
+    width: 2800px;          /*Width of 7 images*/
+    height: 305px;
+    z-index: 1;  /*This container will be on the deepest layer*/
+    left: 0;     /*And it starts at the beginning*/
+
+    transition: left .5s ease-in-out;   /*Scrolling effect*/
+}
+
+.carI img{
+    width: 400px;
+    height: 305px;
+}
+
+.car nav{
+    /*placing the rows of the carousel*/
+    position: absolute;
+    z-index: 2;
+    padding: 0px 10%;
+    width: 70%;
+    height: 305px;
+    line-height: 305px;
+}
+
+.car nav a{
+    /*styling the rows of the carousel*/
+    color: rgba(0, 0, 0, 1);
+    font-size: 80px;
+}
+
+.car nav a:first-child{
+    float: left;    /*Left row to the left...*/
+}
+
+.car nav a:last-child{
+    float: right;   /*...And right row to the right*/
+}
+
+.carC{
+    /*placing and styling the caption*/
+    margin: 30px auto;
+    width: 80%;
+    padding: 20px;
+    text-align: justify;
+    border: 2px solid rgba(178, 25, 25, 0.25);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+/*-----------------------FOOTER-----------------------*/
+
+/*I've already explained all the techniques used in the footer*/
+
+footer {
+    border: 2px rgba(0, 0, 0, 0.25);
+    border-style: solid;
+    height: 200px;
+    line-height: 50px;
+    background-color: #B21919;
+    color: white;
+    text-align: center;
+    display: flex;
+    float:right;
+    width: 100%;
+}
+
+footer > div{
+    margin:auto;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    line-height: 50px;
+    width:100%;
+}
+
+footer > div > h1{
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+}
+
+footer > div > h2{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    height: 77px;
+    line-height: 77px;
+    font-size: 25px;
+    font-family: 'Nanum Gothic', sans-serif;        /*Another google font*/
+    border-top: 2px solid rgba(0, 0, 0, 0.25);
+}
+
+.link, .fb{
+    padding: 5px;
+    height: 40px;
+}
+
+.mail{
+    height: 50px;
+    padding-right: 0px;
+}
+
+.contacts{
+    margin:auto;
+    margin-bottom: 20px;
+    margin-top:0px;
+}
+
+.contacts > li{
+    display: flex;
+    float: left;
+}
+
+.contacts > li > a{
+    display: flex;
+    float: left;
+    margin-right: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.contacts > li > a:hover{
+    background-color: rgba(193, 40, 40, 1);
+}
+
+.contacts > li > a:last-child{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.contacts > li > a > p{
+    padding-left: 10px;
+    margin: 0px;
+}

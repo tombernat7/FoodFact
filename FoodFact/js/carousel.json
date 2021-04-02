@@ -1,0 +1,37 @@
+[
+    {
+        "url" : "img/ketchup.gif",
+        "title" : "Ketchup was sold as a medicine in the 19th century",
+        "caption" : "Before it became the ingredient of choice in classic American burgers, ketchup was actually used as a medicine. For that, you have to go back to the early 19th century. At that time, a high-ranking doctor working at Willoughby University in Ohio led his fellow doctors to believe that ketchup could cure indigestion. Dr. John Cook Bennett - that's the name of this first-rate scammer - was marketing supposedly miraculous ketchup capsules. Of course, this was all a lie, as our favourite tomato puree (unfortunately) has no medicinal properties. But that doesn't stop me from eating it."
+    },
+    {
+        "url" : "img/wasabi.gif",
+        "title" : "Your wasabi is probably just coloured horseradish",
+        "caption" : "When you order in a sushi restaurant, you obviously expect to find a tiny portion of wasabi. And yet, nay! This firecracker green paste that comes with our maki and other sashimi is nothing but coloured horseradish. The cultivation of wasabi (the real thing this time) requires special care, making it a rare commodity, even in Japan, its country of origin. For the record, pure wasabi is usually a lighter shade and you have to pay about 150 euros for a kilo. And yes, have a palet on fire has a price."
+    },
+    {
+        "url" : "img/fugu.png",
+        "title" : "You need at least 3 years of training to be able to cook puffer fish",
+        "caption" : "Forget the fish fingers sitting in your freezer. Now we're getting down to business. Among our Japanese friends, the puffer fish, commonly known as the fugu, is one of the world's most dangerous ocean inhabitants. No, it doesn't have sharp teeth like the shark in Jaws, but it is just as deadly. This is because the fugu secretes a toxin called tetrodotoxin that acts as a protective mechanism against its predators. In other words, if you ingest this toxin, you die a slow death. Since its legalisation in 1984, chefs have been required to undergo at least three years of rigorous training to be allowed to prepare it. Well, maybe we'll stick to our fish with eyes in the corners."
+    },
+    {
+        "url" : "img/honey.gif",
+        "title" : "Honey is actually bee vomit",
+        "caption" : "Honey-goat pizza fans, this one is for us! Before it lands on the shelves of the Morrissons, honey has to be made by our friends the bees. To do this, Maya and her friends take it upon themselves to gather the nectar from the flowers. They then return to their HQ (otherwise known as the hive) to regurgitate their precious honey by adding an enzyme produced by their own bodies, known as invertase. The bees are real hard workers, spreading the substance with their microscopic tongues on the walls of the hive's cells. So yes, you may realise that you  eat vomit every morning. Sorry about that."
+    },
+    {
+        "url" : "img/peanut.gif",
+        "title" : "Peanuts are one of the ingredients of dynamite",
+        "caption" : "When you think back to the low-budget action films of the 80s where explosions were legion, you'd never have guessed that the dynamite sticks used included peanuts. Wait, I'll enlighten you. Basically, one of the components of dynamite is nitroglycerin, a substance that can be dangerous because it is unstable and therefore not easy to handle. Nitroglycerin is obtained from glycerol, a viscous, translucent liquid derived from peanut oil. To be more precise, glycerol can come from other vegetable seed oils, but peanut oil has long been the preferred source. Aannnd Boom!"
+    },
+    {
+        "url" : "img/melon.jpg",
+        "title" : "Some Japanese melons sell for several thousand dollars a piece",
+        "caption" : "This summer, you may have refreshed your taste buds with a slice or two of melon (or watermelon, it's cool too). Often imported from Spain in my country, they rarely exceed the price of a few euros per fruit. So understand my surprise when I realised that some people are prepared to bank 25,000 euros for just two melons. Well, that's for the sensational side. The truth is that the Yubari King, the variety of melon we are talking about, is usually sold for the modest sum of 40 to 90 euros a piece. Grown in a remote part of Japan, the fruit is known for its sweet taste. So, should we get the wallet out?"
+    },
+    {
+        "url" : "img/salad.gif",
+        "title" : "The first food grown in space was a salad",
+        "caption" : "Growing food in a space shuttle? \"Challenge accepted\", Nasa probably said. Indeed, in 2015, astronauts aboard the ISS (International Space Station) accomplished an unprecedented feat by growing salad. The lettuce grew in 33 days in a dedicated box, complete with lighting and its own irrigation system. So, arugula, lamb's lettuce, sucrine? None of the above. The crew chose a red romaine lettuce, selected for its composition and relatively easy cultivation. We are still waiting for the next step in the first space garden."
+    }
+]

@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>FoodFact</title>
+    <!--link to my css file-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!--link to fonts and icon-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--link to the js file-->
+    <script defer src="js/index.js"></script>
+
+    <!--Error treatment-->
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <!--This ID allows us to have a button up that will take us to the top of the webpage-->
+
+    <header id="up">
+
+        <!--FoodFact logo on the top left corner of the every pages-->
+
+        <a href="index.html" class="logo"><img src="img/LogoB.png" alt="FoodFact"></a>
+        <ul class="menu">
+            <li>
+                <a href="#gal">Countries</a>
+                <ul class="submenu">
+                    <li><a href="France.html">France</a></li>
+                    <li><a href="Italy.html">Italy</a></li>
+                    <li><a href="UK.html">United Kingdom</a></li>
+                    <li><a href="Japan.html">Japan</a></li>
+                    <li><a href="China.html">China</a></li>
+                    <li><a href="India.html">India</a></li>
+                    <li><a href="Lebanon.html">Lebanon</a></li>
+                    <li><a href="Mexico.html">Mexico</a></li>
+                    <li><a href="Canada.html">Canada</a></li>
+                </ul>
+            </li>
+            <li><a href="#contacts">Contact</a></li>
+            <li><a href="FF.html">Fun facts</a></li>
+
+            <!--These 3 lines allow me to develop the search area when clicking on the logo-->
+
+            <li><input type="checkbox" id="searchControl">
+                <input type="search" id="search" name="s" placeholder="Search…">
+                <label class="material-icons md-48" for="searchControl">search</label>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <nav>
+            <div class="intro">
+
+                <!--All the text in a "strong" container will be red and strong(obviously)-->
+                <!--The strike class is used to have some scratched text (for a little joke)-->
+
+                <h1>Welcome to <img src="img/LogoI.png" alt="FoodFact"></h1>
+                <p>Here you will find the greatest <strong>recipes</strong> of the world,
+                    devided by <strong>nacionalities</strong>. I've selected <strong>3 meals</strong>
+                    per country that you <strong>absolutly</strong> should not miss.
+                    To define the 9 countries that are currently on my site,
+                    I asked myself which ones were the most famous for their <strong>cuisine</strong>.
+                    The <strong>first</strong> 9 that came to my mind (for more or less legitimate
+                    reasons) were : France, Italy, India, Japan, China, UK, Lebanon,
+                    Mexico and Canada (<span class="strike">mainly</span> essentially for their famous poutine).
+                </p>
+                <p>Whether it's to satisfy your <strong>curiosity</strong>, or to fill your stomach
+                    with the <strong>best meals</strong> from around the globe, this site will
+                    <strong>feed</strong> your appetite.
+                    If you are ready to <strong>devour</strong> the contents of this site,
+                    <a href="#gal"><strong>click</strong></a> on the country of your choice!
+                    Or you can always enjoy the <a href="FF.html"><strong>fun facts</strong></a>
+                    freshly picked for you.
+                </p>
+            </div>
+
+            <!--This ID allows the user to go at this point of the page when clicking on the anchor above-->
+
+            <div id="gal">
+                <h2>You can choose between these <strong>9</strong> different <strong>countries</strong>.
+                    Click on one of them to discover its <strong>specialities</strong>.
+                </h2>
+
+                <!--This anchor calls a js function that will take us to random page among the 9 country pages-->
+                <h3>Or click <a id="here" onclick=randomPage() href="#"><strong>here</strong></a> for a random one.</h3>
+            </div>
+
+            <!--[TASK 3] Here is my 3x3 image gallery from a JSON object-->
+
+            <div class="gallery" id="gallery"></div>
+        </nav>
+
+        <!--Here is the UP anchor that will take the user to the top of the header (so the top of the page)-->
+
+        <a href="#up" class="up">
+            <div>Up</div>
+        </a>
+    </main>
+    <footer>
+        <div>
+            <h1>Contacts :</h1>
+            <ul class="contacts" id="contacts">
+                <li>
+
+                    <!--Link to my linkedin page-->
+
+                    <a href="https://www.linkedin.com/in/tom-bernat-9a40b7198/">
+                    <img class="link" src="img/logoLink.png" alt="Image not found">
+                    </a>
+                </li>
+                <li>
+
+                    <!--Link to my facebook page-->
+
+                    <a href="https://www.facebook.com/profile.php?id=100004540216412">
+                        <img class="fb" src="img/logoFB.png" alt="Image not found">
+                    </a>
+                </li>
+                <li>
+                    <a href="#contacts">
+                        <img class="mail" src="img/logoMail.png" alt="Image not found">
+                        <p>: tombernat7@gmail.com</p>
+                    </a>
+                </li>
+            </ul>
+
+            <!--Copyright-->
+
+            <h2> &copy;Tom Bernat 2021</h2>
+        </div>
+    </footer>
+</body>
+
+</html>

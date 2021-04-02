@@ -1,0 +1,47 @@
+[
+    {
+        "image" : "img/Flag-France.png",
+        "caption" : "France",
+        "page" : "France.html"
+    },
+    {
+        "image" : "img/Flag-Italy.png",
+        "caption" : "Italy",
+        "page" : "Italy.html"
+    },
+    {
+        "image" : "img/Flag-UK(2).jpg",
+        "caption" : "United Kingdom",
+        "page" : "UK.html"
+    },
+    {
+        "image" : "img/Flag-Japan.png",
+        "caption" : "Japan",
+        "page" : "Japan.html"
+    },
+    {
+        "image" : "img/Flag-China.png",
+        "caption" : "China",
+        "page" : "China.html"
+    },
+    {
+        "image" : "img/Flag-India.png",
+        "caption" : "India",
+        "page" : "India.html"
+    },
+    {
+        "image" : "img/Flag-Lebanon.png",
+        "caption" : "Lebanon",
+        "page" : "Lebanon.html"
+    },
+    {
+        "image" : "img/Flag-Mexico.png",
+        "caption" : "Mexico",
+        "page" : "Mexico.html"
+    },
+    {
+        "image" : "img/Flag-Canada.png",
+        "caption" : "Canada",
+        "page" : "Canada.html"
+    }
+]
