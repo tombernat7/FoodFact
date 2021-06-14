@@ -432,7 +432,7 @@ footer > div{
     margin-top: 5px;
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 195px;
     line-height: 50px;
     width:100%;
 }
@@ -447,8 +447,8 @@ footer > div > h2{
     margin: 0px;
     padding: 0px;
     text-align: center;
-    height: 77px;
-    line-height: 77px;
+    height: 74px;
+    line-height: 74px;
     font-size: 25px;
     font-family: 'Nanum Gothic', sans-serif;        /*Another google font*/
     border-top: 2px solid rgba(0, 0, 0, 0.25);
